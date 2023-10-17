@@ -7,7 +7,7 @@
 //***
 //****
 //*****
-for (let i = 0; i < 10; i++) {
+for (let i = 10; i >= 0; i--) {
   let bintang = '';
   for (let j = 0; j <= i; j++) {
     bintang += '*';
