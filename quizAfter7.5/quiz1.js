@@ -91,11 +91,10 @@ console.log('');
 
 function xo(str) {
   // you can only write your code here!
-  // variabel untuk menghitung jumlah 'x' dan 'o'
+
   let countX = 0;
   let countO = 0;
 
-  // Loop melalui setiap string
   for (let i = 0; i < str.length; i++) {
     if (str[i] === 'x') {
       countX++;
@@ -104,7 +103,6 @@ function xo(str) {
     }
   }
 
-  // Membandingkan jumlah karakter dan mengembalikan true jika sama, false jika tidak
   if (countX === countO) {
     return true;
   } else {
