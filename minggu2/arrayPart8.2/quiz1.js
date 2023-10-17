@@ -74,7 +74,6 @@ function dataHandling2(input1) {
   input1.splice(1, 2, 'Roman Alamsyah Elsharawy', 'Provinsi Bandar Lampung');
   input1.splice(4, 4, 'Pria', 'SMA Internasional Metro');
   console.log(input1);
-  console.log('Mei'); // ??? tidak paham yang mei apakah pengerjaannya kaya gini???
   const newSplit = input1[3].split('/');
   if (newSplit[1] === '5') console.log('Mei');
   console.log([newSplit[2], newSplit[0], newSplit[1]]);
