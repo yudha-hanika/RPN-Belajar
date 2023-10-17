@@ -76,6 +76,7 @@ function dataHandling2(input1) {
   console.log(input1);
   console.log('Mei'); // ??? tidak paham yang mei apakah pengerjaannya kaya gini???
   const newSplit = input1[3].split('/');
+  if (newSplit[1] === '5') console.log('Mei');
   console.log([newSplit[2], newSplit[0], newSplit[1]]);
   console.log(input1[1].slice(0, 15));
 }
