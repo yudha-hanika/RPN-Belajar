@@ -8,7 +8,6 @@ function tentukanDeretGeometri(arr) {
       return false;
     }
   }
-
   // Nilai true menunjukkan bahwa barisan tersebut adalah deret geometri.
   return true;
 }
