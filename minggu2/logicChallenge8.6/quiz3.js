@@ -9,7 +9,6 @@ function tentukanDeretAritmatika(arr) {
       return false;
     }
   }
-
   // Nilai true menunjukkan bahwa barisan tersebut adalah deret aritmatika.
   return true;
 }

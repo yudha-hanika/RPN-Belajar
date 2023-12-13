@@ -18,7 +18,6 @@ function perkalianUnik(arr) {
     // Tambahkan hasil ke array hasil
     hasil.push(perkalian);
   }
-
   // Kembalikan array hasil
   return hasil;
 }
