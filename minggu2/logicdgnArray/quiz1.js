@@ -9,12 +9,12 @@ function targetTerdekat(arr) {
   // Memulai loop for untuk iterasi setiap elemen
   for (i = 0; i < arr.length; i++) {
     // Memeriksa apakah elemen arr[i] (elemen pada indeks i) mengandung karakter 'o' menggunakan metode includes().
-    if (arr[i].includes('o')) {
+    if (arr[i] == 'o') {
       arrayX = i;
       // Jika kondisi pada baris 4 salah (elemen arr[i] tidak mengandung 'o'), lanjutkan memeriksa apakah seluruh array tidak mengandung 'x' menggunakan !arr.includes('x').
     } else if (!arr.includes('x')) {
       return 0;
-    } else if (arr[i].includes('x')) {
+    } else if (arr[i] == 'x') {
       arrayO = i;
       break;
     }
