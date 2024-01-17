@@ -3,21 +3,23 @@ Diberikan sebuah function targetTerdekat(arr) yang menerima satu parameter berup
 */
 function targetTerdekat(arr) {
   // you can only write your code here!
-  let countX = 0;
-  let countO = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 'x') {
-      countX++;
-    } else if (arr[i] === 'o') {
-      countO++;
+  // Mendeklarasikan dua variabel
+  let arrayO = 0;
+  let arrayX = -1;
+  // Memulai loop for untuk iterasi setiap elemen
+  for (i = 0; i < arr.length; i++) {
+    // Memeriksa apakah elemen arr[i] (elemen pada indeks i) mengandung karakter 'o' menggunakan metode includes().
+    if (arr[i].includes('o')) {
+      arrayX = i;
+      // Jika kondisi pada baris 4 salah (elemen arr[i] tidak mengandung 'o'), lanjutkan memeriksa apakah seluruh array tidak mengandung 'x' menggunakan !arr.includes('x').
+    } else if (!arr.includes('x')) {
+      return 0;
+    } else if (arr[i].includes('x')) {
+      arrayO = i;
+      break;
     }
   }
-  if (countX === countO) {
-    return true;
-  } else {
-    return false;
-  }
+  return Math.abs(arrayO - arrayX);
 }
 
 // TEST CASES
