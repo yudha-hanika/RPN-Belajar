@@ -18,11 +18,11 @@ function naikAngkot(arrPenumpang) {
     let naikDari = penumpang[1];
     let tujuan = penumpang[2];
 
-    let indeksNaikDari = rute.indexOf(naikDari);
-    let indeksTujuan = rute.indexOf(tujuan);
+    let indekNaikDari = rute.indexOf(naikDari);
+    let indekTujuan = rute.indexOf(tujuan);
 
     // Hitung biaya
-    let jarak = Math.abs(indeksTujuan - indeksNaikDari);
+    let jarak = Math.abs(indekTujuan - indekNaikDari);
     let bayar = jarak * 2000;
 
     // Buat objek penumpang
