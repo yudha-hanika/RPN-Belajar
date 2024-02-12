@@ -23,14 +23,19 @@ function graduates(students) {
   // Code disini
   let result = {};
 
+  // Iterate through each student in the input array
   for (let i = 0; i < students.length; i++) {
     let student = students[i];
     let className = student.class;
 
+    // Check if the student's score is greater than 75 (i.e., they passed)
     if (student.score > 75) {
+      // If the class doesn't exist in the result, create an empty array for it
       if (!result[className]) {
         result[className] = [];
       }
+
+      // Add the student's name and score to the class
       result[className].push({
         name: student.name,
         score: student.score,
